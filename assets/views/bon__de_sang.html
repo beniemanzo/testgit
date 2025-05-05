@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon de demande de sang</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="banque-wrapper">
+        <form class="banque-form">
+          <h2>BON DE DEMANDE DE SANG</h2>
+      
+          <input type="text" placeholder="Médecin demandeur">
+          <div class="row">
+            <input type="text" placeholder="CNOM">
+            <input type="text" placeholder="Téléphone">
+          </div>
+          <input type="text" placeholder="Nom du malade">
+          <div class="row">
+            <input type="number" placeholder="Âge">
+            <input type="text" placeholder="Sexe">
+            <input type="text" placeholder="GS">
+            <input type="text" placeholder="Hb (g%)">
+          </div>
+      
+          <div class="checkbox-group">
+            <label for="type_sang">Type de produit sanguin :</label>
+            <select id="type_sang" name="type_sang">
+              <option value="erythrocytaire">Concentré érythrocytaire</option>
+              <option value="sang_total">Sang total</option>
+              <option value="plasma">Plasma frais</option>
+              <option value="plaquette">Plaquette</option>
+            </select>
+          </div>
+     
+          <div class="row">
+            <input type="number" placeholder="Nombre de poches">
+            <input type="text" placeholder="Quantité (ex : 250ml)">
+          </div>
+      
+          <textarea rows="3" placeholder="Clinique"></textarea>
+      
+          <div class="signature-section">
+            <label>Kinshasa le : <input type="date"></label><br>
+           
+          </div>
+      
+          <button type="submit">Soumettre la demande</button>
+          
+        </form>
+      </div>
+      
+
+
+</body>
+</html>
