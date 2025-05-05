@@ -182,4 +182,8 @@ body {
     text-decoration: underline;
     color: #e60000;
 }
-
+.logo {
+    width: 100px; /* taille modifiable */
+    margin: 0 auto 20px auto;
+    display: block;
+}
