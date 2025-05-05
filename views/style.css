@@ -112,4 +112,74 @@ body {
 .register a:hover {
     color: #e60000;
 }
+/* Spécifique à la page "mot de passe oublié" */
+
+.container {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.container h2 {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.container input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container input[type="email"]:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+.container button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: #e60000;
+}
+
+.container .link {
+    margin-top: 20px;
+}
+
+.container .link a {
+    color: #ff4d4d;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.container .link a:hover {
+    text-decoration: underline;
+    color: #e60000;
+}
 
