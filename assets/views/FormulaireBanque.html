@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Enregistrement – Banque de sang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .partenariat-wrapper {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 95%;
+      margin: 100px auto 30px;
+      animation: fadeIn 1s ease forwards;
+      text-align: center;
+    }
+
+    .partenariat-wrapper h2 {
+      color: #ff4d4d;
+      margin-bottom: 20px;
+    }
+
+    .partenariat-wrapper p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    form {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    button[type="submit"] {
+      background-color: #ff4d4d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #e60000;
+    }
+
+    .logo {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .partenariat-wrapper {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="partenariat-wrapper">
+    <div style="text-align: center;">
+      <img src="../images/logo.jpg" alt="Logo Plateforme" class="logo">
+    </div>
+    <h2>Formulaire d’enregistrement</h2>
+    <p>Veuillez remplir ce formulaire pour enregistrer votre banque de sang :</p>
+
+    <form>
+      <label>Nom de la structure :</label>
+      <input type="text" name="structure" required>
+
+      <label>Commune :</label>
+      <input type="text" name="commune" required>
+
+      <label>Avenue :</label>
+      <input type="text" name="avenue" required>
+
+      <label>Quartier :</label>
+      <input type="text" name="quartier" required>
+
+      <label>Numéro postal :</label>
+      <input type="text" name="postal" required>
+
+      <label>Nom complet du responsable :</label>
+      <input type="text" name="responsable" required>
+
+      <label>Numéro de téléphone :</label>
+      <input type="tel" name="telephone" required>
+
+      <label>Adresse mail :</label>
+      <input type="email" name="email" required>
+
+      <button type="submit">Soumettre</button>
+    </form>
+  </div>
+
+</body>
+</html>
