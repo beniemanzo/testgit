@@ -18,8 +18,14 @@
           </div>
           <input type="text" placeholder="Nom du malade">
           <div class="row">
-            <input type="number" placeholder="Âge">
-            <input type="text" placeholder="Sexe">
+            <input type="number" id="age" placeholder="Âge" min="0">
+
+  <select name="sexe" class="row">
+    <option value="" disabled selected>Sexe</option>
+    <option value="H">H</option>
+    <option value="F">F</option>
+  </select>
+
             <input type="text" placeholder="GS">
             <input type="text" placeholder="Hb (g%)">
           </div>
@@ -35,7 +41,7 @@
           </div>
      
           <div class="row">
-            <input type="number" placeholder="Nombre de poches">
+            <input type="number" id="nombre"  placeholder="Nombre de poches" min="1">
             <input type="text" placeholder="Quantité (ex : 250ml)">
           </div>
       
@@ -50,6 +56,22 @@
           
         </form>
       </div>
+      <script>
+        document.getElementById("age").addEventListener("input", function () {
+          if (this.value < 0) {
+            this.value = "";
+            alert("L'âge ne peut pas être un nombre négatif !");
+          }
+        });
+      </script>
+        <script>
+            document.getElementById("nombre").addEventListener("input", function () {
+              if (this.value < 1) {
+                this.value = "";
+                alert("Le nombre de poche ne peut pas etre inferieur à 1");
+              }
+            });
+          </script>
       
 
 

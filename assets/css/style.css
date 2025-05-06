@@ -250,7 +250,7 @@ body {
     margin-bottom: 15px;
 }
 
-.banque-form .row input {
+.banque-form .row input select {
     flex: 1;
 }
 
@@ -288,6 +288,8 @@ body {
     margin-right: 10px;
     transform: scale(1.1); /* pour les rendre un peu plus visibles */
 }
+
+
 
 
 
