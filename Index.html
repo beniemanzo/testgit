@@ -5,7 +5,32 @@
   <title>Accueil – Plateforme Don de Sang</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<script>
+     document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("navbar-links").classList.toggle("active");
+    });
+  });
+
+  </script>
+  
+  
 <body>
+    <header class="navbar">
+        <div class="navbar-container">
+          <img src="assets/images/logo.jpg" alt="Logo" class="navbar-logo">
+      
+          <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      
+          <nav class="navbar-links" id="navbar-links">
+            <a href="assets/views/partenariat.html">Partenariat</a>
+            <a href="assets/views/Inscription.html">Devenir un donneur</a>
+            <a href="assets/views/login.html">Se connecter</a>
+            <a href="assets/views/Contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+      
   <div class="login-wrapper">
     <img src="assets/images/logo.jpg" alt="Logo plateforme" class="logo">
 
@@ -30,25 +55,6 @@
         </a>
       </div>
     </div>
-  </div>
-
-  <!-- Section partenariat -->
-  <div class="container" id="partenariat" style="margin-top: 50px;">
-    <h2>Partenariat</h2>
-    <p>Vous représentez une banque de sang et souhaitez rejoindre notre réseau ?</p>
-    <p style="margin-bottom: 10px;">
-      Ensemble, améliorons l’accès à la transfusion. Inscrivez votre banque de sang pour :
-    </p>
-    <ul style="text-align: left; font-size: 14px; color: #555; margin-bottom: 20px;">
-      <li>Être visible sur la carte des donneurs</li>
-      <li>Recevoir les demandes en temps réel</li>
-      <li>Optimiser vos stocks et vos alertes</li>
-    </ul>
-    <p><strong>Contactez-nous :</strong></p>
-    <p style="font-size: 14px;">
-      Téléphone : <a href="tel:‪+243812345678‬">‪+243 81 23 45 678‬</a><br>
-      Email : <a href="mailto:partenariat@banquedesang.cd">partenariat@banquedesang.cd</a>
-    </p>
   </div>
 </body>
 </html>

@@ -288,6 +288,90 @@ body {
     margin-right: 10px;
     transform: scale(1.1); /* pour les rendre un peu plus visibles */
 }
+/* --- Barre de navigation --- */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Liens par défaut */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #ff4d4d;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #e60000;
+  }
+  
+  /* Menu burger */
+  .menu-toggle {
+    font-size: 24px;
+    color: #ff4d4d;
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      flex-direction: column;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      width: 200px;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-links a {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Décalage pour le contenu principal */
+  body {
+    padding-top: 80px;
+  }
+  
 
 
 
