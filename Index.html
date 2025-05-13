@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil – Plateforme Don de Sang</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<script>
+     document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("navbar-links").classList.toggle("active");
+    });
+  });
+
+  </script>
+  
+  
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+          <img src="assets/images/logo.jpg" alt="Logo" class="navbar-logo">
+      
+          <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      
+          <nav class="navbar-links" id="navbar-links">
+            <a href="assets/views/partenariat.html">Partenariat</a>
+            <a href="assets/views/Inscription.html">Devenir un donneur</a>
+            <a href="assets/views/login.html">Se connecter</a>
+            <a href="assets/views/Contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+      
+  <div class="login-wrapper">
+    <img src="assets/images/logo.jpg" alt="Logo plateforme" class="logo">
+
+    <h2>Bienvenue sur notre plateforme de don de sang</h2>
+    <p>Nous connectons les banques de sang à ceux qui en ont besoin, en temps réel.</p>
+
+    <div class="login-form">
+      <p style="margin-bottom: 40px; font-size: 15px; color: #444;">
+        Notre mission est de sauver des vies en facilitant l'accès rapide, sécurisé et géolocalisé au sang. Grâce à un réseau de banques de sang partenaires et de donneurs volontaires, nous construisons une réponse solidaire et moderne aux urgences vitales.
+      </p>
+
+      <div class="bouton">
+        <a href="assets/views/partenariat.html">
+          <button style="background-color: #ffffff; color: #ff4d4d; border: 2px solid #ff4d4d;">
+            Partenariat – Banque de sang
+          </button>
+        </a>
+        <a href="assets/views/Inscription.html">
+          <button>
+            Devenez donneur – Sauvez des vies
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

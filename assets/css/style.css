@@ -1,0 +1,381 @@
+
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff4d4d, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Conteneur principal */
+.login-wrapper {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Formulaire */
+.login-form h2 {
+    margin-bottom: 10px;
+    color: #ff4d4d;
+}
+
+.login-form p {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #ff4d4d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 1Opx;
+}
+
+.login-form button:hover {
+    background: #e60000;
+}
+
+/* Lien mot de passe oublié */
+.forgot {
+    margin-top: 10px;
+}
+
+.forgot a {
+    font-size: 13px;
+    color: #ff4d4d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot a:hover {
+    color: #e60000;
+}
+
+/* Lien inscription */
+.register {
+    margin-top: 20px;
+}
+
+.register p {
+    font-size: 13px;
+    color: #555;
+}
+
+.register a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: #e60000;
+}
+/* Spécifique à la page "mot de passe oublié" */
+
+.container {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.container h2 {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.container input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container input[type="email"]:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+.container button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: #e60000;
+}
+
+.container .link {
+    margin-top: 20px;
+}
+
+.container .link a {
+    color: #ff4d4d;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.container .link a:hover {
+    text-decoration: underline;
+    color: #e60000;
+}
+.logo {
+    width: 90px; /* taille modifiable */
+    margin: 0 auto 10px auto;
+    display: block;
+}
+.bouton {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* espace automatique entre les boutons */
+  }
+  /* Formulaire banque de sang horizontal */
+.banque-wrapper {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.banque-form {
+    flex: 1 1 45%;
+}
+
+.banque-form h2 {
+    text-align: center;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+.banque-form input,
+.banque-form select,
+.banque-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.banque-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.banque-form .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.banque-form .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.banque-form .row input select {
+    flex: 1;
+}
+
+.banque-form button {
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.banque-form button:hover {
+    background-color: #e60000;
+}
+
+.signature-section {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.banque-form .radio-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.banque-form .radio-group input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.1); /* pour les rendre un peu plus visibles */
+}
+/* --- Barre de navigation --- */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Liens par défaut */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #ff4d4d;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #e60000;
+  }
+  
+  /* Menu burger */
+  .menu-toggle {
+    font-size: 24px;
+    color: #ff4d4d;
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      flex-direction: column;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      width: 200px;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-links a {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Décalage pour le contenu principal */
+  body {
+    padding-top: 80px;
+  }
+  
+
+
+
+
+
+
+
